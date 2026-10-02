@@ -1,43 +1,43 @@
-# 💜 С годовщиной — Наша история
+# 💜 Happy Anniversary -Our Story
 
-Романтический одностраничный сайт, посвящённый годовщине отношений.  
-Создан с любовью, с музыкой **Bakr — Сирень** и нежными анимациями.
+A romantic one-page website dedicated to the anniversary of a relationship.  
+Created with love, with music **Bakr -Lilac**and gentle animations.
 
-## ✨ Возможности
+## ✨ Opportunities
 
-- 🎵 **Музыка** — песня «Сирень» на фоне с управлением звуком
-- 📸 **Фотографии** — 15 совместных фото в красивых сетках с эффектами
-- 🎬 **Видео** — 3 видео (природа, танец) с автовоспроизведением при скролле
-- ⏱ **Таймер** — сколько дней, часов, минут и секунд вы вместе
-- 💖 **Интерактивные анимации**:
-  - Клик — разлетающиеся сердечки
-  - Двойной клик — любовные послания
-  - Долгое нажатие — взрыв любви
-  - Курсор-сердечко со шлейфом искр
-  - Летящие лепестки сакуры и мерцающие звёзды
-  - 3D-наклон карточек при наведении
-  - Поднимающиеся сердечки, притягивающиеся к курсору
-- 📱 **Адаптивный дизайн** — работает на телефоне и десктопе
-- 🤳 **Встряхивание телефона** — взрыв сердечек!
+-🎵 **Music**— the song “Lilac” in the background with sound control
+-📸 **Photos**-15 photos of people together in beautiful grids with effects
+-🎬 **Video**— 3 videos (nature, dance) with autoplay when scrolling
+-⏱ **Timer**-how many days, hours, minutes and seconds are you together
+-💖 **Interactive animations**:
+  -Click -flying hearts
+  -Double click -love messages
+  -Long press -explosion of love
+  -Heart cursor with a trail of sparks
+  -Flying sakura petals and twinkling stars
+  -3D tilt of cards when hovering
+  -Rising hearts that are attracted to the cursor
+-📱 **Responsive design**-works on phone and desktop
+-🤳 **Shake the phone**-hearts explode!
 
-## 🛠 Технологии
+## 🛠 Technologies
 
-- HTML5
-- CSS3 (анимации, градиенты, glassmorphism)
-- JavaScript (Vanilla JS, Canvas API)
-- Без фреймворков
+-HTML5
+-CSS3 (animations, gradients, glassmorphism)
+-JavaScript (Vanilla JS, Canvas API)
+-No frameworks
 
-## 📁 Структура
+## 📁 Structure
 
 ```
-├── index.html          # Главная страница
-├── style.css           # Стили и анимации
-├── script.js           # Логика и интерактив
+├── index.html # Home page
+├── style.css # Styles and animations
+├── script.js # Logic and interactivity
 ├── assets/
-│   ├── *.mp3           # Музыка
-│   ├── images/         # Фотографии
-│   └── video/          # Видео
+│ ├── *.mp3 # Music
+│ ├── images/# Photos
+│ └── video/# Video
 └── README.md
 ```
 
-## 💜 Сделано с любовью
+## 💜 Made with love

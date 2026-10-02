@@ -20,37 +20,54 @@ document.addEventListener('DOMContentLoaded', () => {
   const RELATIONSHIP_START = new Date('2025-02-14T00:00:00');
 
   const LOVE_MESSAGES = [
-    'Я люблю тебя 💜', 'Ты — моё всё ❤️', 'Навсегда вместе 💕',
-    'Моё сердце — твоё 💖', 'Обожаю тебя 🥰', 'Ты прекрасна ✨',
-    'Моя любимая 🌸', 'Бесконечно твой 💫', 'Ты — счастье 🦋', 'Люблю без слов 🌹'
+    'I love you 💜', 'You are my everything ❤️', 'Forever together 💕',
+    'My heart is yours 💖', 'I love you 🥰', 'You are beautiful ✨',
+    'My favorite 🌸', 'Infinitely yours 💫', 'You are happiness 🦋', 'I love you without words 🌹'
   ];
 
-  const LYRICS = [
-    { time: 30.0, text: "Наблюдаю за рассветом на побережье," },
-    { time: 33.9, text: "Пока мы оба стареем." },
-    { time: 37.5, text: "Я не в силах описать свои чувства," },
-    { time: 41.6, text: "Всё, что я знаю — мы возвращаемся домой." },
-    { time: 45.4, text: "Поэтому, пожалуйста, не отпускай меня," },
-    { time: 49.2, text: "Не отпускай меня..." },
-    { time: 53.2, text: "И если всё верно, мне плевать, сколько это займёт," },
-    { time: 60.7, text: "Пока я рядом с тобой," },
-    { time: 64.2, text: "Улыбка не сходит с моего лица." },
-    { time: 68.1, text: "Прибереги свои слёзы, всё будет хорошо," },
-    { time: 72.1, text: "Всё, что я знаю — ты здесь, со мной." },
-    { time: 79.9, text: "Смотрю на рассвет, пока мы стареем, о-о..." },
-    { time: 87.7, text: "Я не могу описать, о-о..." },
-    { time: 91.8, text: "Я хотел бы прожить каждое воспоминание о тебе" },
-    { time: 95.5, text: "Ещё один раз, прежде чем ты улетишь по ветру." },
-    { time: 99.5, text: "И всё то время, что мы провели," },
-    { time: 103.3, text: "Ожидая момента, когда свет заберёт нас," },
-    { time: 107.2, text: "Это были лучшие мгновения моей жизни." },
-    { time: 111.0, text: "Мне всё равно, сколько времени это займёт," },
-    { time: 118.7, text: "Пока я рядом с тобой," },
-    { time: 122.3, text: "Улыбка не сходит с моего лица." },
-    { time: 126.1, text: "Всё будет хорошо, просто не плачь," },
-    { time: 130.2, text: "Ведь ты здесь, ты со мной..." },
-    { time: 134.0, text: "Я не могу описать..." }
-  ];
+const LYRICS = [
+  // Verse 1
+  { time: 19.0, text: "You, you look so beautiful" },
+  { time: 26.0, text: "Standing there, watching me" },
+  { time: 31.0, text: "I, I can't stop thinking about" },
+  { time: 38.0, text: "You and your eyes" },
+  { time: 41.0, text: "And all the words you left behind" },
+  { time: 45.0, text: "That night, when we almost fell in love" },
+
+  // Chorus
+  { time: 55.0, text: "I don't have much time" },
+  { time: 61.0, text: "For falling in love" },
+  { time: 68.0, text: "But you are the one" },
+  { time: 74.0, text: "That I'm searching for" },
+  { time: 80.0, text: "I'm watching you smile" },
+  { time: 84.0, text: "Through the door" },
+  { time: 88.0, text: "While saying goodnight to me" },
+
+  // Verse 2
+  { time: 126.0, text: "Black shirt and ivory skirt" },
+  { time: 133.0, text: "Can you stay with me for a while" },
+  { time: 139.0, text: "I, I can't stop thinking about" },
+  { time: 145.0, text: "You and your smile" },
+  { time: 148.0, text: "And all the words you have behind" },
+  { time: 153.0, text: "That night, when we surely fell in love" },
+
+  // Chorus
+  { time: 162.0, text: "I don't have much time" },
+  { time: 169.0, text: "For falling in love" },
+  { time: 175.0, text: "But you are the one" },
+  { time: 181.0, text: "That I'm searching for" },
+  { time: 188.0, text: "I'm watching you smile" },
+  { time: 191.0, text: "Through the door" },
+  { time: 195.0, text: "While saying goodnight to me" },
+  { time: 200.0, text: "to me" },
+  // Outro
+  { time: 234.0, text: "And I don't want to get hurt" },
+  { time: 238.0, text: "When I hear your name" },
+  { time: 240.0, text: "So tell me how to keep you in my life" },
+  { time: 247.0, text: "And I don't want to get hurt" },
+  { time: 249.0, text: "When I hear your name" },
+  { time: 252.0, text: "So tell me how to keep you in my life" }
+];
 
   /* ========== STATE ========== */
   let isPlaying = false;
@@ -188,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     const popup = document.createElement('div');
     popup.className = 'love-popup';
-    popup.textContent = '💜 Я люблю тебя бесконечно 💜';
+    popup.textContent = '💜 I love you endlessly 💜';
     popup.style.left = x + 'px'; popup.style.top = (y-30) + 'px';
     popup.style.fontSize = '1.4rem';
     document.body.appendChild(popup);
